@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #93575A;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 3px solid #E8B39A;
+    border-radius: 7px;
+    height: 600px;
+    width: 338px;
+    background-color: #b57168;
+}
+#display{
+    display: grid;
+    grid-template-areas:
+     "num1 num1 backbutton"
+     "operater num2 backbutton"
+     ;
+    background-color: #93575A;
+    border: 3px solid #E8B39A;
+    border-radius: 7px;
+    height: 120px;
+    width: 304px;
+}
+#displaynum{
+    grid-area: num1;
+    font-weight: 800;
+    font-size: 200% ;
+    color: #E8B39A ;
+    text-align: end;
+    width: 228px;
+}
+#displayNum{
+    grid-area: num2;
+    font-weight: 800;
+    font-size: 200% ;
+    color: #E8B39A ;
+    text-align: end;
+    width: 198px ;
+}
+
+#displayOperater{
+    grid-area: operater;
+    width: 30px;
+}
+#backspace{
+    grid-area: backbutton;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    font-size: 200% ;
+    color: #E8B39A ;
+    text-align: center;
+    width: 76px;
+}
+#Button{
+    
+    border-radius: px;
+    height: 420px;
+    width: 304px;
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 7px;
+    column-gap: 7px;
+}
+.btn{
+    display: grid;
+    place-items: center;
+    border: 3px solid #E8B39A;
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    font-weight: 800;
+    font-size: larger;
+    color: #E8B39A ;
+}
+.operationButton.btn {
+    font-weight: 900;
+    color: #b57168;
+    font-size: larger;
+    background-color: #E8B39A;
+}
+
+.numButton.btn {
+    background-color: #b57168;
+}
