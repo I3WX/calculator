@@ -56,6 +56,10 @@ body{
 #displayOperater{
     grid-area: operater;
     width: 30px;
+    font-weight: 800;
+    font-size: 200% ;
+    color: #E8B39A ;
+    text-align: center;
 }
 #backspace{
     grid-area: backbutton;
@@ -91,6 +95,12 @@ body{
     color: #E8B39A ;
 }
 .operationButton.btn {
+    font-weight: 900;
+    color: #b57168;
+    font-size: larger;
+    background-color: #E8B39A;
+}
+.operationbutton.btn{    
     font-weight: 900;
     color: #b57168;
     font-size: larger;
