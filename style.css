@@ -23,6 +23,11 @@ body{
     height: 600px;
     width: 338px;
     background-color: #36454F;
+    box-shadow: 3px 3px 5px;
+}
+#box:hover {
+    transform: scale(1.001) translate(-2px, -2px);
+    box-shadow: 3px 3px 3px;
 }
 #display{
     display: grid;
@@ -95,8 +100,8 @@ body{
     color: #B0C4DE;
 }
 .btn:hover{
-    transform: scale(1.05);
-    font-size: x-large;
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
 }
 .operationButton.btn {
     font-weight: 900;
