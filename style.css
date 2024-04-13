@@ -5,7 +5,7 @@
 body{
     height: 100%;
     width: 100%;
-    background-color: #93575A;
+    background-color: #2F4F4F;
 }
 #container{
     display: flex;
@@ -18,11 +18,11 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    border: 3px solid #E8B39A;
+    border: 3px solid #778899;
     border-radius: 7px;
     height: 600px;
     width: 338px;
-    background-color: #b57168;
+    background-color: #36454F;
 }
 #display{
     display: grid;
@@ -30,8 +30,8 @@ body{
      "num1 num1 backbutton"
      "operater num2 backbutton"
      ;
-    background-color: #93575A;
-    border: 3px solid #E8B39A;
+    background-color: #2C3539;
+    border: 3px solid #778899;
     border-radius: 7px;
     height: 120px;
     width: 304px;
@@ -40,7 +40,7 @@ body{
     grid-area: num1;
     font-weight: 800;
     font-size: 200% ;
-    color: #E8B39A ;
+    color: #B0C4DE;
     text-align: end;
     width: 228px;
 }
@@ -48,7 +48,7 @@ body{
     grid-area: num2;
     font-weight: 800;
     font-size: 200% ;
-    color: #E8B39A ;
+    color: #B0C4DE;
     text-align: end;
     width: 198px ;
 }
@@ -58,7 +58,7 @@ body{
     width: 30px;
     font-weight: 800;
     font-size: 200% ;
-    color: #E8B39A ;
+    color: #B0C4DE;
     text-align: center;
 }
 #backspace{
@@ -67,7 +67,7 @@ body{
     place-items: center;
     font-weight: 800;
     font-size: 200% ;
-    color: #E8B39A ;
+    color: #B0C4DE;
     text-align: center;
     width: 76px;
 }
@@ -86,27 +86,31 @@ body{
 .btn{
     display: grid;
     place-items: center;
-    border: 3px solid #E8B39A;
+    border: 3px solid #778899;
     border-radius: 7px;
     height: 100%;
     width: 100%;
     font-weight: 800;
     font-size: larger;
-    color: #E8B39A ;
+    color: #B0C4DE;
+}
+.btn:hover{
+    transform: scale(1.05);
+    font-size: x-large;
 }
 .operationButton.btn {
     font-weight: 900;
-    color: #b57168;
+    color: #36454F;
     font-size: larger;
-    background-color: #E8B39A;
+    background-color: #778899;
 }
 .operationbutton.btn{    
     font-weight: 900;
-    color: #b57168;
+    color: #36454F;
     font-size: larger;
-    background-color: #E8B39A;
+    background-color: #778899;
 }
 
 .numButton.btn {
-    background-color: #b57168;
+    background-color: #36454F; 
 }

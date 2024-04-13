@@ -113,6 +113,7 @@
         num1 = displayNum1.innerHTML
         num2 = displayNum2.innerHTML
         opertater = displayOperater.innerHTML
+        displayOperater.innerHTML = ""
         num1 = parseFloat(num1)
         num2 = parseFloat(num2)
         displayNum1.innerHTML= " "
