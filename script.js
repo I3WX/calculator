@@ -1,28 +1,33 @@
-    const displayNum1 = document.getElementById("displaynum");
-    const displayNum2 = document.getElementById("displayNum");
-    const displayOperater = document.getElementById("displayOperater");
-    const operationButton = document.querySelectorAll(".operationButton")
+// Display elements
+const displayNum1 = document.getElementById("displaynum"); // First operand display
+const displayNum2 = document.getElementById("displayNum"); // Second operand display
+const displayOperater = document.getElementById("displayOperater"); // Operator display
 
-    const Calculater = document.getElementById("box")
+// Calculator buttons
+const operationButton = document.querySelectorAll(".operationButton"); // All operation buttons
 
-    const numButton1 = document.getElementById("numButton1");
-    const numButton2 = document.getElementById("numButton2");
-    const numButton3 = document.getElementById("numButton3");
-    const numButton4 = document.getElementById("numButton4");
-    const numButton5 = document.getElementById("numButton5");
-    const numButton6 = document.getElementById("numButton6");
-    const numButton7 = document.getElementById("numButton7");
-    const numButton8 = document.getElementById("numButton8");
-    const numButton9 = document.getElementById("numButton9");
-    const numButton0 = document.getElementById("numButton0");
-    const numButtonDecimal = document.getElementById("numButtonDecimal");
+const Calculater = document.getElementById("box"); // Calculator container
 
-    const operationButtonPlus = document.getElementById("operationButtonPlus");
-    const operationButtonMinus = document.getElementById("operationButtonMinus");
-    const operationButtonMultiply = document.getElementById("operationButtonMultiply");
-    const operationButtonDivide = document.getElementById("operationButtonDivide");
-    const operationButtonEquals = document.getElementById("operationButtonEquals");
-    const backspace = document.getElementById("backspace");
+// Number buttons
+const numButton1 = document.getElementById("numButton1");
+const numButton2 = document.getElementById("numButton2");
+const numButton3 = document.getElementById("numButton3");
+const numButton4 = document.getElementById("numButton4");
+const numButton5 = document.getElementById("numButton5");
+const numButton6 = document.getElementById("numButton6");
+const numButton7 = document.getElementById("numButton7");
+const numButton8 = document.getElementById("numButton8");
+const numButton9 = document.getElementById("numButton9");
+const numButton0 = document.getElementById("numButton0");
+const numButtonDecimal = document.getElementById("numButtonDecimal");
+
+// Operation buttons
+const operationButtonPlus = document.getElementById("operationButtonPlus");
+const operationButtonMinus = document.getElementById("operationButtonMinus");
+const operationButtonMultiply = document.getElementById("operationButtonMultiply");
+const operationButtonDivide = document.getElementById("operationButtonDivide");
+const operationButtonEquals = document.getElementById("operationButtonEquals");
+const backspace = document.getElementById("backspace");
 
 
     function shownum(num){
