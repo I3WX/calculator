@@ -3,6 +3,8 @@
     const displayOperater = document.getElementById("displayOperater");
     const operationButton = document.querySelectorAll(".operationButton")
 
+    const Calculater = document.getElementById("box")
+
     const numButton1 = document.getElementById("numButton1");
     const numButton2 = document.getElementById("numButton2");
     const numButton3 = document.getElementById("numButton3");
@@ -130,3 +132,28 @@
             else
                 displayNum2.innerHTML = "Can't Divide With 0"
     })
+
+    function getMousePosition(event) {
+        const x = event.clientX;
+        const y = event.clientY;
+        return { x, y };
+    }
+
+    Calculater.addEventListener('mousemove', function(event) {
+        const { x, y } = getMousePosition(event);
+        const rect = Calculater.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        const midY = rect.top + rect.height / 2;
+    
+        const distanceX = Math.abs(x - midX);
+        const distanceY = Math.abs(y - midY);
+    
+        const maxDistance = Math.max(rect.width / 2, rect.height / 2);
+        const strengthX = (distanceX / maxDistance) * 15; 
+        const strengthY = (distanceY / maxDistance) * 15; 
+    
+        let shadowX = x < midX ? -strengthX : strengthX;
+        let shadowY = y < midY ? -strengthY : strengthY;
+    
+        Calculater.style.boxShadow = `${shadowX}px ${shadowY}px 15px rgba(0, 0, 0, 0.5)`;
+    });
